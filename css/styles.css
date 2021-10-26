@@ -143,3 +143,30 @@ ul {
         width: 40%;
     }
 }
+
+/* ==== Create ==== */
+
+@media (min-width: 768px) {
+    .create {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+.content-create h2 {
+    color: #313c4e;
+    display: inline-block;
+    font-size: 3.6rem;
+    margin-top: 5rem;
+}
+
+.content-create h2::after {
+    content: "";
+    display: block;
+    background-color: #84d9bc;
+    height: 1rem;
+    margin: -1.4rem 0 0;
+    width: calc(100% + 1rem);
+}
