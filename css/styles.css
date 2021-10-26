@@ -320,3 +320,70 @@ ul {
         margin: auto auto auto 0;
     }
 }
+
+/* ==== testimonials ==== */
+
+@media (min-width: 768px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 5rem;
+    }
+    
+    .testimonials .heading {
+        margin-top: 0;
+    }
+
+    .testimonials-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .testimonials-content h2 {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* ==== testimonial ==== */
+
+.testimonial {
+    background-color: var(--primary);
+    border: 0.5rem solid var(--secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    background-image: url(../img/comilla.svg);
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: 2rem 3rem;
+}
+
+@media (min-width: 768px) {
+    .testimonial {
+        max-width: 45rem;
+    }
+    .testimonial:nth-child(1) {
+        margin-right: auto;
+        
+    }
+    .testimonial:nth-child(2) {
+        margin: 0 auto;
+        
+    }
+    .testimonial:nth-child(3) {
+        margin-left: auto;
+    }
+}
+
+.testimonial p {
+    padding-left: 7rem;
+}
