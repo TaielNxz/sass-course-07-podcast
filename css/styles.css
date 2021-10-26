@@ -76,9 +76,23 @@ ul {
     }
 }
 
-.btn-primary {
-    background-color: #84d9bc;
+.btn-1 {
+    background-color: var(--primary);
     border: none;
+    color: var(--secondary);
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.2rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    width: 100%;
+}
+
+.btn-2 {
+    background-color: #84d9bc;
+    border: 3px solid var(--white);
     color: #313c4e;
     display: block;
     font-size: 2rem;
@@ -149,14 +163,13 @@ ul {
     font-size: 4.5rem;
 }
 
-.content-header a {
-    width: 30rem;
-}
-
 @media (min-width: 768px) {
     .content-header h1 {
         font-size: 6rem;
         width: 40%;
+    }
+    .content-header a {
+        width: 30rem;
     }
 }
 
@@ -208,5 +221,102 @@ ul {
     }
     .benefits-img:hover {
         transform: scale(1.1) rotate(8deg);
+    }
+}
+
+/* ==== Plans ==== */
+
+.plans {
+    background-color: var(--secondary);
+}
+
+.plans .heading,
+.plans .description {
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .plans .heading {
+        margin-top: 0;
+    }
+}
+
+.plans-list {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .plans-list {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+        width: 80%;
+        margin: 5rem auto;
+    }
+}
+
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 15rem 4rem 4rem 4rem;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center 5%;
+}
+
+.plan .price {
+    font-weight: 700;
+    margin: 0;
+}
+
+.plan .list {
+    line-height: 2;
+}
+
+
+.plan-start {
+    background-color: var(--white);
+    background-image: url(../img/icono_inicio.svg);
+}
+
+.plan-business {
+    order: -1;
+    background-color: var(--primary);
+    background-image: url(../img/icono_negocio.svg);
+}
+
+.plan-pro {
+    background-color: var(--white);
+    background-image: url(../img/icono_pro.svg);
+    border-top: 1px solid #e1e1e1;
+}
+
+@media (min-width: 768px) {
+    .plan {
+        transition-property: transform;
+        transition-duration: 300ms;
+    }
+    .plan:hover {
+        transform: scale(1.1);
+    }
+
+    .plan-start {
+        height: 85%;
+        margin: auto 0 auto auto;
+    }
+    
+    .plan-business {
+        min-height: 60rem;
+        order: 0;
+        z-index: 1;
+        border-radius: 2rem;
+    }
+    
+    .plan-pro {
+        height: 85%;
+        margin: auto auto auto 0;
     }
 }
