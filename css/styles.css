@@ -32,6 +32,34 @@ p {
     line-height: 2;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem  0 ;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
 .conteiner {
     width: 95%;
     max-width: 1200px;
@@ -62,32 +90,20 @@ p {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
+.heading {
+    color: var(--secondary);
+    display: inline-block;
+    font-size: 3.6rem;
+    margin-top: 5rem;
 }
 
-img {
-    max-width: 100%;
+.heading::after {
+    content: "";
     display: block;
-}
-
-h1, h2, h3 {
-    margin: 0 0 2rem  0 ;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 2.8rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
+    background-color: var(--primary);
+    height: 1rem;
+    margin: -1.4rem 0 0;
+    width: calc(100% + 1rem);
 }
 
 /* ==== Header ==== */
@@ -155,18 +171,42 @@ ul {
     }
 }
 
-.content-create h2 {
-    color: #313c4e;
-    display: inline-block;
-    font-size: 3.6rem;
-    margin-top: 5rem;
+/* ==== benefits ==== */
+
+.benefits {
+    background-color: var(--primary);
 }
 
-.content-create h2::after {
-    content: "";
-    display: block;
-    background-color: #84d9bc;
-    height: 1rem;
-    margin: -1.4rem 0 0;
-    width: calc(100% + 1rem);
+@media (min-width: 768px) {
+    .benefits-conteiner {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 5rem;
+        align-items: center;
+    }
+}
+
+.benefits .heading::after {
+    background-color: var(--white);
+}
+
+.benefits-img {
+    width: 80%;
+    margin: 8rem auto;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.benefits-img:hover {
+    transform: scale(1.15) rotate(8deg);
+}
+
+@media (min-width: 768px) {
+    .benefits-img {
+        width: 90%;
+        margin: 0;
+    }
+    .benefits-img:hover {
+        transform: scale(1.1) rotate(8deg);
+    }
 }
