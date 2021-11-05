@@ -13,8 +13,8 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -29,9 +29,9 @@ body {
 }
 
 p {
-  color: var(--black);
   font-size: 2rem;
   line-height: 2;
+  color: var(--black);
 }
 
 a {
@@ -39,8 +39,8 @@ a {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -82,54 +82,54 @@ ul {
 }
 
 .btn-1 {
-  background-color: var(--primary);
-  border: none;
-  color: var(--secondary);
   display: block;
+  width: 100%;
+  padding: 1.2rem 4rem;
   font-size: 2rem;
   font-weight: 700;
-  padding: 1.2rem 4rem;
+  color: var(--secondary);
   text-align: center;
   text-decoration: none;
+  background-color: var(--primary);
+  border: none;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 .btn-2 {
-  background-color: #84d9bc;
-  border: 3px solid var(--white);
-  color: #313c4e;
   display: block;
+  width: 100%;
+  padding: 1.2rem 4rem;
   font-size: 2rem;
   font-weight: 700;
-  padding: 1.2rem 4rem;
+  color: #313c4e;
   text-align: center;
   text-decoration: none;
+  background-color: #84d9bc;
+  border: 3px solid var(--white);
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 .heading {
-  color: var(--secondary);
   display: inline-block;
-  font-size: 3.6rem;
   margin-top: 5rem;
+  font-size: 3.6rem;
+  color: var(--secondary);
 }
 
 .heading::after {
-  content: "";
   display: block;
-  background-color: var(--primary);
+  width: calc(100% + 1rem);
   height: 1rem;
   margin: -1.4rem 0 0;
-  width: calc(100% + 1rem);
+  content: "";
+  background-color: var(--primary);
 }
 
 /* ==== Header ==== */
 
 .header {
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
 }
 
 .notavif.notweb .header {
@@ -191,8 +191,8 @@ ul {
 
 @media (min-width: 768px) {
   .content-header h1 {
-    font-size: 6rem;
     width: 40%;
+    font-size: 6rem;
   }
   .content-header a {
     width: 30rem;
@@ -204,9 +204,9 @@ ul {
 @media (min-width: 768px) {
   .create {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    align-items: center;
   }
 }
 
@@ -219,9 +219,9 @@ ul {
 @media (min-width: 768px) {
   .benefits-conteiner {
     display: grid;
+    align-items: center;
     grid-template-columns: 3fr 2fr;
     gap: 5rem;
-    align-items: center;
   }
 }
 
@@ -232,8 +232,8 @@ ul {
 .benefits-img {
   width: 80%;
   margin: 8rem auto;
-  transition-property: transform;
   transition-duration: 300ms;
+  transition-property: transform;
 }
 
 .benefits-img:hover {
@@ -275,26 +275,26 @@ ul {
 @media (min-width: 768px) {
   .plans-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: 5rem auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .plan {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   padding: 15rem 4rem 4rem 4rem;
+  text-align: center;
   background-repeat: no-repeat;
-  background-size: 10rem;
   background-position: center 5%;
+  background-size: 10rem;
 }
 
 .plan .price {
-  font-weight: 700;
   margin: 0;
+  font-weight: 700;
 }
 
 .plan .list {
@@ -320,8 +320,8 @@ ul {
 
 @media (min-width: 768px) {
   .plan {
-    transition-property: transform;
     transition-duration: 300ms;
+    transition-property: transform;
   }
   .plan:hover {
     transform: scale(1.1);
@@ -333,9 +333,9 @@ ul {
   }
 
   .plan-business {
-    min-height: 60rem;
-    order: 0;
     z-index: 1;
+    order: 0;
+    min-height: 60rem;
     border-radius: 2rem;
   }
 
@@ -380,15 +380,15 @@ ul {
 /* ==== testimonial ==== */
 
 .testimonial {
-  background-color: var(--primary);
-  border: 0.5rem solid var(--secondary);
-  border-radius: 1rem;
   padding: 1rem;
+  background-color: var(--primary);
 
   background-image: url(../img/comilla.svg);
   background-repeat: no-repeat;
-  background-size: 5rem;
   background-position: 2rem 3rem;
+  background-size: 5rem;
+  border: 0.5rem solid var(--secondary);
+  border-radius: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -435,17 +435,17 @@ ul {
 }
 
 .footer-widget h3 {
-  color: var(--primary);
   margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .footer-widget a {
   display: block;
+  width: 50%;
+  padding: 0.5rem;
+  margin: 0 auto;
   color: var(--white);
   text-align: center;
-  padding: 0.5rem;
-  width: 50%;
-  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -456,8 +456,8 @@ ul {
     margin: 0 auto 1rem 0.5rem;
   }
   .footer-widget a {
-    text-align: left;
     margin: 0 auto 0 0;
+    text-align: left;
   }
 }
 
@@ -466,10 +466,10 @@ ul {
 }
 
 .copyright {
-  color: var(--white);
-  border-top: 1px solid var(--primary);
-  text-align: center;
-  font-size: 1.6rem;
-  margin: 0;
   padding: 1rem 0;
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--white);
+  text-align: center;
+  border-top: 1px solid var(--primary);
 }
