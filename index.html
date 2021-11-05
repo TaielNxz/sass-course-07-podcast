@@ -42,7 +42,21 @@
                 <p>Los podcast se han convertido en un medio de entretenimiento que cada día gana más seguidores, con temas variados puedes crear tu propio podcast, ser escuchada(o) por miles de personas y convertir tu pasión en un negocio.</p>
             </div>
             <div class="benefits-img">
-                <img src="img/podcast_cover.png" alt="image podcast">
+                <picture>
+                    <source
+                         sizes="1920w" 
+                         srcset="img/podcast_cover.avif 1920w" 
+                         type="image/avif">
+                    <source
+                         sizes="1920w" 
+                         srcset="img/podcast_cover.webp 1920w" 
+                         type="image/webp">
+                    <source
+                         sizes="1920w" 
+                         srcset="img/podcast_cover.png 1920w" 
+                         type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/podcast_cover.png" width="500" height="300" alt="image podcast">
+                </picture>
             </div>
         </div>
     </section>
@@ -109,7 +123,21 @@
     </section>
     <section class="testimonials conteiner section">
         <div class="testimonials-img">
-            <img src="img/app.jpg" alt="image app">
+            <picture>
+                <source
+                     sizes="1920w" 
+                     srcset="img/app.avif 1920w" 
+                     type="image/avif">
+                <source
+                     sizes="1920w" 
+                     srcset="img/app.webp 1920w" 
+                     type="image/webp">
+                <source
+                     sizes="1920w" 
+                     srcset="img/app.jpg 1920w" 
+                     type="image/jpeg">
+                <img loading="lazy" decoding="async" src="img/app.jpg" width="500" height="300" alt="image app">
+            </picture>
         </div>
 
         <div class="testimonials-content">

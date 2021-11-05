@@ -39,6 +39,7 @@ a {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 h1, h2, h3 {
@@ -123,11 +124,26 @@ ul {
 /* ==== Header ==== */
 
 .header {
+    background-size: cover;
+    background-position: center center;
+}
+
+.notavif.notweb .header {
     background-image: 
     linear-gradient( var(--secondaryOpacity), var(--secondaryOpacity) ),
     url(../img/header.jpg);
-    background-size: cover;
-    background-position: center center;
+}
+
+.webp .header {
+    background-image: 
+    linear-gradient( var(--secondaryOpacity), var(--secondaryOpacity) ),
+    url(../img/header.webp);
+}
+
+.avif .header {
+    background-image: 
+    linear-gradient( var(--secondaryOpacity), var(--secondaryOpacity) ),
+    url(../img/header.avif);
 }
 
 .header-conteiner {
